@@ -8,6 +8,11 @@ import WhyNotSPAWithVue from './WhyNotSPAWithVue'
 import WhatWeHaveInSPAWithVue from './WhatWeHaveInSPAWithVue'
 import FeaturedComponents from './FeaturedComponents'
 import HowToConstructAMicroFrontend from './HowToConstructAMicroFrontend'
+import FirstStepComposition from './FirstStepComposition'
+import SecondStepPrepareMainApp from './SecondStepPrepareMainApp'
+import CustomElements from './CustomElements'
+import DemoTime from './DemoTime'
+import WhatsNext from './WhatsNext'
 import End from './End'
 
 const slides = [
@@ -72,7 +77,68 @@ const slides = [
     transition: 'fade'
   },
   {
+    component: CustomElements,
+    transition: 'fade'
+  },
+  {
     component: HowToConstructAMicroFrontend,
+    transition: 'fade'
+  },
+  {
+    component: FirstStepComposition,
+    transition: 'fade',
+    data: {
+      step: 0
+    }
+  },
+  {
+    component: FirstStepComposition,
+    transition: 'none',
+    data: {
+      step: 1
+    }
+  },
+  {
+    component: FirstStepComposition,
+    transition: 'none',
+    data: {
+      step: 2
+    }
+  },
+  {
+    component: FirstStepComposition,
+    transition: 'none',
+    data: {
+      step: 3
+    }
+  },
+  {
+    component: SecondStepPrepareMainApp,
+    transition: 'fade',
+    data: {
+      step: 0
+    }
+  },
+  {
+    component: SecondStepPrepareMainApp,
+    transition: 'none',
+    data: {
+      step: 1
+    }
+  },
+  {
+    component: SecondStepPrepareMainApp,
+    transition: 'none',
+    data: {
+      step: 2
+    }
+  },
+  {
+    component: DemoTime,
+    transition: 'fade'
+  },
+  {
+    component: WhatsNext,
     transition: 'fade'
   },
   {

@@ -113,4 +113,15 @@ export default {
   .fade-enter, .fade-leave-to {
     opacity: 0;
   }
+
+  .slide-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-leave-active {
+    transition: all .3s ease;
+  }
+  .slide-enter, .slide-leave-to {
+    transform: translateX(20vh);
+    opacity: 0;
+  }
 </style>

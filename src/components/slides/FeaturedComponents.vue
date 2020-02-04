@@ -3,19 +3,12 @@
     <h1>
       Featured Components
     </h1>
-    <highlight-code lang="vue" v-pre>
-      &lt;!-- A template --&gt;
-      &lt;template&gt;
-        &lt;div class="chaton"&gt;
-          &lt;h1&gt;Chaton {{ name }}&lt;/h1&gt;
-          &lt;button @click="meow"&gt;Say Meow&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/template&gt;
-
-      &lt;!-- The Component description --&gt;
-      &lt;script&gt;
+    <highlight-code lang="javascript" v-pre>
       export default {
         name: 'ChatonComponent',
+        props: {
+          color: String
+        },
         data () {
           return {
             name: 'Lucky'
@@ -27,17 +20,12 @@
             const m = this.meowStr
             console.log(`${m} !`)
           }
-        }
+        },
+        template: `&lt;div class="chaton" :style="{backgroundColor: color}"&gt;
+          &lt;h1&gt;Chaton {{ name }}&lt;/h1&gt;
+          &lt;button @click="meow"&gt;Say Meow&lt;/button&gt;
+        &lt;/div&gt;`
       }
-      &lt;/script&gt;
-
-      &lt;!-- The style --&gt;
-      &lt;style&gt;
-      .chaton {
-        background-color: orange;
-        color: brown;
-      }
-      &lt;/style&gt;
     </highlight-code>
   </div>
 </template>

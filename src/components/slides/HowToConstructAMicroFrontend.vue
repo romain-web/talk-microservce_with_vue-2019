@@ -3,11 +3,7 @@
     <h1>
       Ok, How to compose my App<br>with Micro Frontends
     </h1>
-    <ul>
-      <li>Custom Elements</li>
-      <li>SystemsJs</li>
-      <li>Lazy Loading</li>
-    </ul>
+    <p>The power of WebComponents and <span class="vuejs"></span></p>
   </div>
 </template>
 

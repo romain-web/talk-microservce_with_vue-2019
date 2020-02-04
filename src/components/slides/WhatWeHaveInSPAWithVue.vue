@@ -4,7 +4,7 @@
       What we have in SPA with <span class="vuejs"/>
     </h1>
     <ul>
-      <li>Featured Components</li>
+      <li>Featured and Reusable Components</li>
       <li>Routing with Vue-router <a href="https://github.com/vuejs/vue-router"><GithubIcon /></a></li>
       <li>State Management with Vuex <a href="https://github.com/vuejs/vuex"><GithubIcon /></a></li>
       <li>Api with Vue-apollo (GraphQl) <a href="https://github.com/akryum/vue-apollo"><GithubIcon /></a></li>
