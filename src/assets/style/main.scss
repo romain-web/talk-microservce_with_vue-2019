@@ -1,0 +1,94 @@
+@import '~normalize.css';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: rubik, sans-serif;
+  font-size: 1rem;
+
+  background-color: $palette-dark-grey;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background-attachment: fixed;
+  color: $white;
+}
+
+h1 {
+  font-size: $text-size-1;
+  @include text-shadow(3);
+}
+
+p,
+ul li {
+  font-size: $text-size-2;
+  @include text-shadow(1);  
+}
+
+a {
+  font-size: $text-size-4;
+  color: $primary-color;
+  text-decoration: none;
+
+  .icon,
+  .material-design-icon {
+    svg {
+      fill: $primary-color;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+
+  li {
+    &:before {
+      content: '- ';
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vuejs {
+  &::before {
+    content: 'Vue';
+    color: $palette-green;
+  }
+  
+  &::after {
+    content: 'Js';
+    color: $palette-dark-grey;
+  }
+}
+
+pre {
+  border-radius: 2vh;
+  overflow: hidden;
+
+  .hljs {
+    padding: 2vh;
+    font-size: $text-size-5;
+    max-height: 60vh;
+  }
+}
+
+.icon,
+.material-design-icon {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: $text-size-4;
+  // height: $text-size-4;
+  width: $text-size-4;
+  margin: 1vh;
+}
+
+.slide {
+  position: absolute;
+}
